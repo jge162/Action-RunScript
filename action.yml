@@ -1,0 +1,47 @@
+name: 'Action-RunScript'
+description: 'Custom script execution'
+
+inputs:
+  repository:
+    description: 'Repo name with owner'
+    default: ${{ github.repository }}
+  ref:
+    description: 'Branch/tag/SHA'
+    default: ${{ github.ref }}
+  token:
+    description: 'Access token'
+    default: ${{ github.token }}
+  ssh-key:
+    description: 'SSH key for auth'
+  ssh-known-hosts:
+    description: 'Known hosts'
+  ssh-strict:
+    description: 'Strict host check'
+    default: true
+  persist-credentials:
+    description: 'Config token/SSH'
+    default: true
+  path:
+    description: 'Relative path'
+  clean:
+    description: 'Git clean/reset'
+    default: true
+  fetch-depth:
+    description: 'Commits to fetch'
+    default: 1
+  lfs:
+    description: 'Download Git-LFS'
+    default: false
+  submodules:
+    description: 'Checkout submodules'
+    default: false
+  set-safe-directory:
+    description: 'Safe directory config'
+    default: true
+  github-server-url:
+    description: 'GitHub server URL'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
