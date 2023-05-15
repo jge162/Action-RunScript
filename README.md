@@ -1,6 +1,7 @@
 ## Action-RunScript
 
-Personal use GitHub action to run yaml files <br></br>
+GitHub action to run yaml files 
+<br></br>
 [![CI](https://github.com/jge162/Action-RunScript/actions/workflows/Action-RunScript.yml/badge.svg)](https://github.com/jge162/Action-RunScript/actions/workflows/Action-RunScript.yml)
 [![Create_Release](https://github.com/jge162/Action-RunScript/actions/workflows/CreateRelease.yml/badge.svg)](https://github.com/jge162/Action-RunScript/actions/workflows/CreateRelease.yml)
 [![Dependabot auto-merge](https://github.com/jge162/Action-RunScript/actions/workflows/AutoMergeDependabot.yml/badge.svg)](https://github.com/jge162/Action-RunScript/actions/workflows/AutoMergeDependabot.yml)
